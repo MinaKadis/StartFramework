@@ -9,12 +9,12 @@ export class PortfolioComponent {
   isLayerVisible: boolean = false;
   selectedImage: string = '';
   imagesUrl = [
-    './../../assets/images/poert1.png',
-    './../../assets/images/port2.png',
-    './../../assets/images/port3.png',
-    './../../assets/images/port2.png',
-    './../../assets/images/poert1.png',
-    './../../assets/images/port2.png',
+    './assets/images/poert1.png',
+    './assets/images/port2.png',
+    './assets/images/port3.png',
+    './assets/images/port2.png',
+    './assets/images/poert1.png',
+    './assets/images/port2.png',
   ];
 
   SrcImag(e: Event) {
