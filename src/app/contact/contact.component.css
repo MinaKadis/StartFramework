@@ -1,0 +1,20 @@
+.contact {
+  height: 100vh;
+  margin-top: 70px;
+}
+/* label {
+    color: var(--main-color);
+    margin-bottom: 7px;
+    transition: 0.6s top ease-in-out;
+    top: -50px;
+    z-index: -1;
+  }
+
+  input:focus + label {
+    top: -90px;
+    z-index: 1;
+  }
+
+  button {
+    margin-left: -100px;
+  } */
