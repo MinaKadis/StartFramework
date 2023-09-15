@@ -3,17 +3,25 @@
   <div class="container">
     <div class="row g-4">
       <div class="col-md-4" *ngFor="let img of imagesUrl">
-        <img class="w-100" (click)="SrcImag($event)" src="{{ img }}" />
+        <div class="rounded-3 overflow-hidden position-relative">
+          <img #imgg class="w-100" src="{{ img }}" />
+          <!-- (click)="SrcImag($event)" -->
+          <div
+            (click)="SrcImag(imgg)"
+            class="layer position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center"
+          >
+            <i class="text-white fa-solid fa-plus fa-6x"></i>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
 <div
   class="model__ position-fixed start-0 top-0 w-100 h-100 bg-danger bg-opacity-50 d-flex justify-content-center align-items-center"
-  (click)="hideLayer($event)"
+  (click)="hideLayer($event, image)"
   hideLayer
   *ngIf="isLayerVisible"
 >
-  <img [src]="selectedImage" alt="" />
+  <img #image [src]="selectedImage" alt="" />
 </div>
